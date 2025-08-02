@@ -1,0 +1,22 @@
+{
+  "name": "meu-site",
+  "version": "1.0.0",
+  "description": "Um site simples com HTML, CSS e JavaScript.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build script not defined'"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "site"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
