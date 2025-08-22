@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (video) {
         video.addEventListener('ended', function() {
             video.removeAttribute('controls');
+            // Força o vídeo a re-renderizar sem controles
+            video.style.display = 'none';
+            setTimeout(() => {
+                video.style.display = '';
+            }, 10);
         });
     }
 });
