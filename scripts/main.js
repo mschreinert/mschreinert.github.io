@@ -38,6 +38,11 @@ let sliderInterval = setInterval(nextSlide, 3000); // Troca a cada 3 segundos
 // Inicia o slider ao carregar a página
 showSlide(0);
 
-document.querySelector('.header-video').addEventListener('ended', function() {
-    this.removeAttribute('controls');
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.header-video');
+    if (video) {
+        video.addEventListener('ended', function() {
+            video.removeAttribute('controls');
+        });
+    }
 });
